@@ -32,8 +32,7 @@ while not is_sentence(user_sentence):
     user_sentence = input("Enter a sentence: ")  # Fixed variable name from 'user_input' to 'user_sentence'
 
 # Step 2: Split the sentence into words (remove punctuation and lowercase)
-words = user_sentence.lower().split()
-
+words = [word.strip(".,!?;:") for word in user_sentence.lower().split()]
 # Step 3: Create lists to store unique words and their frequencies
 unique_words = []
 frequencies = []
