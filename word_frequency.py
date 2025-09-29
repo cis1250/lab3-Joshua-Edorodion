@@ -29,7 +29,7 @@ def is_sentence(text):
 user_sentence = input("Enter a sentence: ")
 while not is_sentence(user_sentence):
     print("This does not meet the criteria for a sentence.")
-    user_sentence = input("Enter a sentence: ")  # ✅ Fixed variable name from 'user_input' to 'user_sentence'
+    user_sentence = input("Enter a sentence: ")  # Fixed variable name from 'user_input' to 'user_sentence'
 
 # Step 2: Split the sentence into words (remove punctuation and lowercase)
 words = re.findall(r'\b\w+\b', user_sentence.lower())
